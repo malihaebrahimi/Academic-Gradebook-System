@@ -23,12 +23,7 @@ def show_menu():
 
 
 def prompt_assessment_type():
-    """
-    Shows the assessment-type menu and returns the matching class from
-    ASSESSMENT_TYPES, or None if the user's choice isn't a recognized
-    type. Kept separate from the main loop so the "reject invalid
-    type" logic is in exactly one place.
-    """
+   
     print("Type: (1) Quiz (2) Exam (3) Project")
     choice = input("Choice: ").strip()
     return ASSESSMENT_TYPES.get(choice)
